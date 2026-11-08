@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pharmle – Lernapotheke</title>
+  <meta name="description" content="Lernapp für das Pharmaziestudium – Physiologie, Chemie, Anatomie und mehr.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23119b5a'/%3E%3Cpath d='M12 5h8v7h7v8h-7v7h-8v-7H5v-8h7z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="Zur Startseite">
+      <span class="brand-cross" aria-hidden="true"></span>
+      <span class="brand-text">Pharmle<small>Lernapotheke</small></span>
+    </a>
+    <div class="topbar-right">
+      <div class="dose-pill" id="dosePill" title="Heute gelernte Karten und Fragen">
+        <span class="dose-ico" aria-hidden="true">💊</span>
+        <span><b id="doseToday">0</b> / <span id="doseGoal">20</span> Tagesdosis</span>
+      </div>
+      <button class="icon-btn" id="themeBtn" aria-label="Hell/Dunkel umschalten" title="Hell/Dunkel">◐</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <p>Zu Risiken und Nebenwirkungen lesen Sie die Vorlesungsfolien und fragen Sie Ihre Dozierenden.</p>
+    <p class="muted">Inhalte Physiologie basierend auf den Folien HS (Dr. M. Brauchle, Unibas) und D. Silverthorn.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data/subjects.js"></script>
+  <script src="js/data/physiologie.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
